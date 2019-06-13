@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Switch, Route } from 'react-router-dom'
 
-import { FeedPage, NewPage, LoginPage } from './pages'
+import { FeedPage, NewPage, AccountPage } from './pages'
 import Header from './components/Header'
 
 function Routes () {
@@ -11,7 +11,7 @@ function Routes () {
     <>
       { useHeader && <Header /> }
       <Switch>
-        <Route path='/login' component={LoginPage} />
+        <Route path='/accounts' component={AccountPage} />
         <Route path='/' exact component={FeedPage} />
         <Route path='/new' component={NewPage} />
       </Switch>

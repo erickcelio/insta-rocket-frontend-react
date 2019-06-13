@@ -10,3 +10,8 @@ body {
     font: 14px Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased !important;
 }
+
+#root {
+    height: 100vh;
+    width: 100%;
+}

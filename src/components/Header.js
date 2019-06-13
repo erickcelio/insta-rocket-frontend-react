@@ -22,7 +22,7 @@ class HeaderComponent extends Component {
       if (token) {
         console.log(token)
       }
-      history.push('/login')
+      history.push('/accounts')
     }
   }
 

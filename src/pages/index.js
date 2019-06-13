@@ -1,9 +1,9 @@
 import FeedPage from './Feed'
 import NewPage from './New'
-import LoginPage from './Login'
+import AccountPage from './Account'
 
 export {
   FeedPage,
   NewPage,
-  LoginPage
+  AccountPage
 }
