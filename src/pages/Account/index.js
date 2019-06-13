@@ -11,13 +11,15 @@ import {
   LoginDesc,
   Separator,
   ChangeForm,
-  ChangeFormLink
+  ChangeFormLink,
+  Input,
+  SubmitButton
 } from './components'
 
 const AccountPage = () => {
   const dispatch = useDispatch()
 
-  const [ formType, setFormType ] = useState('register')
+  const [ formType, setFormType ] = useState('login')
 
   useEffect(() => {
     dispatch(disableHeader())
@@ -25,9 +27,14 @@ const AccountPage = () => {
 
   const renderFormLogin = () => {
     return (
-      <div>
-        Login
-      </div>
+      <>
+        <Input type='text' placeholder='Número de telefone, Nome de usuário ou email' />
+        <Input type='password' placeholder='Senha' />
+        <SubmitButton>
+          Entrar
+        </SubmitButton>
+        <Separator />
+      </>
     )
   }
 
